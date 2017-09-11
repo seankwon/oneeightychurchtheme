@@ -117,7 +117,9 @@ add_action( 'widgets_init', 'one_eighty_church_widgets_init' );
  * Enqueue scripts and styles.
  */
 function one_eighty_church_scripts() {
-	wp_enqueue_style( 'one-eighty-church-style', get_stylesheet_uri() );
+  wp_enqueue_style( 'one-eighty-church-style', get_stylesheet_uri() );
+  wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/styles/bootstrap.min.css');
+  wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/styles/bootstrap-theme.min.css');
 
 	wp_enqueue_script( 'one-eighty-church-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
