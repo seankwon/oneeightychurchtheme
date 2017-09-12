@@ -15,7 +15,22 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+    <main id="home-page" class="wrapper">
+      <h2 class='info-rect'>Find out more:</h2>
+      <div class='row'>
+        <div class='col-sm-4'>
+          <h3 class='text-center'>Sunday Sermons</h3>
+        </div>
+        <div class='col-sm-4'>
+          <h3 class='text-center'>The Journey</h3>
+        </div>
+        <div class='col-sm-4'>
+          <h3 class='text-center'>The Resources</h3>
+        </div>
+      </div>
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
 
 		<?php
 		if ( have_posts() ) :
@@ -47,9 +62,6 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
 <?php
 get_sidebar();
