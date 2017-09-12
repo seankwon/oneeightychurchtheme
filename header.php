@@ -21,36 +21,42 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'one-eighty-church' ); ?></a>
+<div id="main-container" class="site ">
+  <?php if (is_home()) : ?>
+    <div class='banner-wrapper' style="background: url(<?php echo get_template_directory_uri() . "/images/pano-community.jpg"?>) center no-repeat fixed">
+  <?php endif; ?>
+      <header id="main-header">
+        <nav class='navbar navbar-default site-header'>
+          <div class='navbar-header'>
+            <a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+              <img src="<?php echo get_template_directory_uri() . "/images/logo.png"?>" alt="180 Church Logo">
+            </a>
+            <?php
+              wp_nav_menu( array(
+                'theme_location' => 'menu-1',
+                'menu_id'        => 'primary-menu',
+                'container'      => 'nav'
+              ) );
+            ?>
+          </div>
+        </nav>
+        <div class="site-branding">
+        </div><!-- .site-branding -->
+      </header><!-- #masthead -->
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
-
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'one-eighty-church' ); ?></button>
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+    <?php if (is_home()) :?>
+      <div class="clearfix intro-container">
+        <div class="intro-wrapper">
+          <h2>Welcome Home!</h2>
+          <p>
+            Here at 180 Church, we welcome you to come just as you are.
+            Whether you are near or far from faith, lost or found, or anywhere in between, we invite you to discover and encounter Christ with us.
+            We believe you will experience a real change where Christ doesn't change only some things about you; He changes everything!
+          </p>
+        </div>
+      </div>
+      <!-- Extra ending div encloses banner-container-->
+    </div>
+    <?php endif;?>
 
 	<div id="content" class="site-content">
