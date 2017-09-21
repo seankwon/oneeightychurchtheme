@@ -1,4 +1,11 @@
+h1, h2, h3, h4, h5, h6, p, div, span, img, section, nav, main {
+  font-family: 'Amaranth', sans-serif;
+}
 
+h4 {
+  color: #55aacc;
+  font-weight: 700;
+}
 .banner-wrapper {
   background-size: cover!important;
   height: 550px;
@@ -53,6 +60,11 @@
   display: inline-block;
 }
 
+.custom-container {
+  width: 940px;
+  margin: 0 auto;
+}
+
 .intro-container {
   width: 940px;
   margin: 0 auto 30px;
@@ -83,7 +95,7 @@
 
 .wrapper {
   padding: 10px;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   width: 940px;
   overflow: hidden;
   clear: both;
@@ -91,6 +103,8 @@
 
 .content-area {
   position: relative;
+  background-position: 50% 0px;
+  background-size: cover;
 }
 
 #home-page {
@@ -111,4 +125,35 @@
   height: 62px;
   width: auto;
   text-transform: uppercase;
+}
+
+.section-two {
+  background: #317795;
+  color: #fff;
+  padding: 20px 40px;
+}
+
+.location-section div {
+  font-size: 18px;
+}
+
+.location-section strong {
+  color: #b8cdd7;
+}
+
+.resource-panel img {
+  width: 100%;
+}
+
+.location-section {
+  margin: 0 auto;
+}
+
+.footer {
+  background: #55aacc;
+  color: #fff;
+}
+
+.footer .info-wrapper {
+  font-size: 11px;
 }

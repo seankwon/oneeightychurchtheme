@@ -13,56 +13,58 @@
  */
 
 get_header(); ?>
+  
+  <section class="section-two">
+    <div class="custom-container location-section">
+      <div class="text-center lead">Sunday Services @ <strong>12pm</strong> at <strong>AMC Loews Theater, 890 Broadway (@ 19th St) New York, NY 10003</strong></div>
+    </div>
+  </section>
 
-	<div id="primary" class="content-area">
+  <section style="background: url('<?php echo get_template_directory_uri() . '/images/bg-grey-static.jpg' ?>');" id="primary" class="content-area section-one">
     <main id="home-page" class="wrapper">
       <h2 class='info-rect'>Find out more:</h2>
       <div class='row'>
-        <div class='col-sm-4'>
-          <h3 class='text-center'>Sunday Sermons</h3>
+        <div class='col-sm-8'>
+          <h3>Latest Teaching</h3>
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h6>September 17, 2017</h6>
+              <h4>Where is Jesus in our vulnerability</h4>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/DPlyM4BHn04" frameborder="0" allowfullscreen></iframe>
+              <h5>Where is Jesus in our vulnerability - Billy Kim</h5>
+              <p>
+                 The culture we live in often presents an adverse posture towards vulnerability - more or less, 
+                 we are the products of hearts that are numbed.
+                 However, deep within the human heart, amidst the allure of success, significance, 
+                 and popularity, we long for our calling as the beloved. The invitation of the gospel 
+                 and the journey of faith is recognizing the depth and pursuit 
+                 of Gods love for us, and our ability to close the gap of intimacy 
+                 in our relationships through the power of vulnerability. 
+              </p>
+              <p>© 180 Church 2017</p>
+            </div>
+          </div>
         </div>
         <div class='col-sm-4'>
-          <h3 class='text-center'>The Journey</h3>
-        </div>
-        <div class='col-sm-4'>
-          <h3 class='text-center'>The Resources</h3>
+          <h3>Resources</h3>
+          <div class="resource-panel panel panel-default">
+            <div class="panel-body">
+              <h4>Our Mission</h4>
+              <img src="<?php echo get_template_directory_uri() . '/images/home-turning.jpg' ?>">
+            </div>
+          </div>
+          <div class="resource-panel panel panel-default">
+            <div class="panel-body">
+              <h4>Connect With Us</h4>
+              <img src="<?php echo get_template_directory_uri() . '/images/home-living.jpg' ?>">
+            </div>
+          </div>
         </div>
       </div>
 		</main><!-- #main -->
-	</div><!-- #primary -->
+	</section><!-- #primary -->
 
-
-		<?php
-		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-
-			<?php
-			endif;
-
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
 
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();
