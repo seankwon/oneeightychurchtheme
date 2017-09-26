@@ -19,6 +19,15 @@
 
 <link href="https://fonts.googleapis.com/css?family=Amaranth:400,400i,700,700i" rel="stylesheet">
   <?php wp_head(); ?>
+<style>
+.content-area {
+  background: url('<?php echo get_template_directory_uri() . '/images/bg-grey-static.jpg' ?>');
+}
+
+.page-template-default .content-area {
+  background: url('<?php echo get_template_directory_uri() . '/images/bg-diagonal-lines.jpg' ?>');
+}
+</style>
 </head>
 
 <body <?php body_class(); ?>>

@@ -49,6 +49,7 @@ h4 {
 #primary-menu ul li {
   display: inline-block;
 }
+
 #primary-menu ul li + li {
   margin-left: 20px;
 }
@@ -156,4 +157,15 @@ h4 {
 
 .footer .info-wrapper {
   font-size: 11px;
+}
+
+.content-area .individual-page-header {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.page-template-default .navbar {
+  margin-bottom: 0;
 }
