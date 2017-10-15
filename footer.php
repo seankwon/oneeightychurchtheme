@@ -55,9 +55,26 @@
         </div>
         <div class="col-sm-4">
           <h3>SERVICE LOCATION</h3>
+          <iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=890+Broadway,+New+York,+NY&amp;aq=2&amp;oq=890+Broadway,+New+York,+&amp;sll=40.738413,-73.989401&amp;sspn=0.019169,0.028152&amp;gl=us&amp;ie=UTF8&amp;hq=&amp;hnear=890+Broadway,+New+York,+10003&amp;t=m&amp;z=14&amp;ll=40.738414,-73.989402&amp;output=embed" width="250" height="250" frameborder="0"></iframe>
         </div>
         <div class="col-sm-4">
           <h3>DON'T MISS A SERMON!</h3>
+					<!-- stuff-->
+					<form method='post'>
+						<div class='form-group'>
+							<label for='mce-EMAIL'>Email Address</label>
+							<input name="EMAIL" id='mce-EMAIL' type='email' class='form-control' placeholder='Email'>
+						</div>
+						<div class='form-group'>
+							<label for='mce-180'>First Name</label>
+							<input name="180" id='mce-180' type='text' class='form-control' placeholder='First Name'>
+						</div>
+						<div class='form-group'>
+							<label for='mce-CHURCH'>Last Name</label>
+							<input name="CHURCH" id='mce-CHURCH' type='text' class='form-control' placeholder='Last Name'>
+						</div>
+						<button type='submit' class='btn btn-default'>Subscribe</button>
+					</form>
         </div>
       </div>
 		</div><!-- .site-info -->

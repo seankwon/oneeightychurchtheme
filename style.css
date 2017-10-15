@@ -1,11 +1,30 @@
-h1, h2, h3, h4, h5, h6, p, div, span, img, section, nav, main {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Amaranth', sans-serif;
+}
+
+/* FIXME: a hack for headers*/
+h1 {
+  padding-top: 20px;
+  margin-top: 0;
+}
+
+p, div, span, img, section, nav, main {
+  font-family: 'Rosario', sans-serif;
 }
 
 h4 {
   color: #55aacc;
   font-weight: 700;
 }
+
+p {
+  font-size: 16px;
+}
+
+.indiv-page-container {
+  padding-bottom: 20px;
+}
+
 .banner-wrapper {
   background-size: cover!important;
   height: 550px;
@@ -18,7 +37,6 @@ h4 {
 }
 
 .navbar {
-
   border: none;
   border-radius: none;
 }
@@ -36,8 +54,8 @@ h4 {
 }
 
 #primary-menu {
-  display: inline-block;
   float: right;
+  font-family: 'Amaranth', sans-serif;
 }
 
 #primary-menu ul {
@@ -153,6 +171,7 @@ h4 {
 .footer {
   background: #55aacc;
   color: #fff;
+  padding-bottom: 20px;
 }
 
 .footer .info-wrapper {
@@ -168,4 +187,37 @@ h4 {
 
 .page-template-default .navbar {
   margin-bottom: 0;
+}
+
+.small-group-img {
+  max-width: 100%;
+}
+
+.small-group-copy {
+  margin: 20px 0;
+}
+
+.align-right {
+  text-align: right;
+}
+
+#resources .resource-link {
+  font-family: 'Amaranth', sans-serif;
+  color: #55aacc;
+  font-size: 36px;
+  font-style: italic;
+}
+
+#resources p {
+  /* FIXME: bad overrides */
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.full-width-video-wrapper {
+  width: 100%;
+}
+
+.full-width-video-wrapper iframe {
+  width: inherit;
 }

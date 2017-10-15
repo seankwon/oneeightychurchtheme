@@ -17,7 +17,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="profile" href="http://gmpg.org/xfn/11">
 
-<link href="https://fonts.googleapis.com/css?family=Amaranth:400,400i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amaranth:400,400i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rosario:400,700" rel="stylesheet"> 
   <?php wp_head(); ?>
 <style>
 .content-area {
