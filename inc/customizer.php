@@ -10,6 +10,26 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
+ add_filter( 'page_template', 'staff_bios' );
+ function staff_bios( $page_template )
+ {
+     if ( is_page( 'pastor-sam' ) ) {
+         $page_template = get_template_directory() . '/staff-bios/page-pastor-sam.php';
+     } else if ( is_page( 'pastor-lydia' ) ) {
+         $page_template = get_template_directory() . '/staff-bios/page-pastor-lydia.php';
+     } else if ( is_page( 'sarah-bennett' ) ) {
+         $page_template = get_template_directory() . '/staff-bios/page-sarah-bennett.php';
+     } else if ( is_page( 'charles-bennett' ) ) {
+         $page_template = get_template_directory() . '/staff-bios/page-charles-bennett.php';
+     } else if ( is_page( 'henry-kim' ) ) {
+         $page_template = get_template_directory() . '/staff-bios/page-henry-kim.php';
+     } else if ( is_page( 'stu-still' ) ) {
+         $page_template = get_template_directory() . '/staff-bios/page-stu-still.php';
+     } else if ( is_page( 'pastor-billy' ) ) {
+         $page_template = get_template_directory() . '/staff-bios/page-pastor-billy.php';
+		 }
+     return $page_template;
+ }
 
 function one_eighty_church_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';

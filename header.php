@@ -18,7 +18,7 @@
   <link rel="profile" href="http://gmpg.org/xfn/11">
 
   <link href="https://fonts.googleapis.com/css?family=Amaranth:400,400i,700,700i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rosario:400,700" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Rosario:400,700" rel="stylesheet">
   <?php wp_head(); ?>
 <style>
 .content-area {
@@ -43,10 +43,13 @@
               <img src="<?php echo get_template_directory_uri() . "/images/logo.png"?>" alt="180 Church Logo">
             </a>
             <?php
+              $pastor_sam = get_page_by_title('Pastor Sam');
+              $ids = "{$pastor_sam->ID}";
               wp_nav_menu( array(
                 'theme_location' => 'menu-1',
                 'menu_id'        => 'primary-menu',
-                'container'      => 'nav'
+                'container'      => 'nav',
+                'exclude'        => $ids
               ) );
             ?>
           </div>
