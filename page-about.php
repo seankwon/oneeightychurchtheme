@@ -48,11 +48,8 @@
       </div>
     </div>
 
-    <h1>Meet the Staff</h1>
-    <div class='row'>
-      <div class='col-sm-6'>
-      </div>
-    </div>
+    <?php echo_staff_bios(); ?>
+
   </div>
 </section>
 

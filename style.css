@@ -221,3 +221,47 @@ p {
 .full-width-video-wrapper iframe {
   width: inherit;
 }
+
+.portfolio-container {
+	display: block;
+	width: 300px;
+	height: 240px;
+	float: left;
+	position: relative;
+	background-position: 0 0 ;
+	transition: all .4s;
+	-moz-transition: all .4s; /* Firefox */
+	-webkit-transition: all .4s; /* Safari and Chrome */
+	-o-transition: all .4s; /* Opera */
+	margin: 20px 20px 0 0;
+	overflow: hidden;
+	box-shadow: 3px 4px 0px #b2bac4;
+	-moz-box-shadow: 3px 4px 0px #b2bac4;
+	-o-box-shadow: 3px 4px 0px #b2bac4;
+	-webkit-box-shadow: 3px 4px 0px #b2bac4;
+}
+
+.portfolio-container:hover {
+	background-position: 0 -240px !important;
+	box-shadow: 3px 4px 0px #8f8f8f;
+}
+
+.portfolio-title {
+	color: white;
+	font: 18px 'Amaranth',Arial,Helvetica,sans-serif;
+	padding: 10px 0 6px 10px;
+	position: absolute;
+	bottom: -50px;
+	left: 0px;
+	text-decoration: none;
+	width: 100%;
+	background-color: #55aacc;
+	transition: all .4s;
+	-moz-transition: all .4s; /* Firefox */
+	-webkit-transition: all .4s; /* Safari and Chrome */
+	-o-transition: all .4s; /* Opera */
+}
+
+.portfolio-container:hover .portfolio-title {
+	bottom: 0px;
+}

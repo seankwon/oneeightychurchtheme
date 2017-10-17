@@ -7,6 +7,67 @@
  * @package one-eighty-church
  */
 
+function echo_staff_bios() {
+	echo "
+		<h1>Meet the Staff</h1>
+		<div class='row'>
+			<div class='col-sm-4'>
+				<a href='#p-sam'>
+					<div class='portfolio-container' style='background: url(" . get_template_directory_uri() . '/images/portraits/pastor-sam.jpg' . ")'>
+						<div class='portfolio-title'>Dr. Sammy Kim</div>
+					</div>
+				</a>
+			</div>
+			<div class='col-sm-4'>
+				<a href='#lydia-kim'>
+					<div class='portfolio-container' style='background: url(" . get_template_directory_uri() . '/images/portraits/lydia-kim.jpg'. "'>
+						<div class='portfolio-title'>Pastor Lydia Kim</div>
+					</div>
+				</a>
+			</div>
+			<div class='col-sm-4'>
+				<a href='#billy-kim'>
+					<div class='portfolio-container' style='background: url(" . get_template_directory_uri() . '/images/portraits/billy-kim.jpg'. "'>
+						<div class='portfolio-title'>Pastor Billy Kim</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class='row'>
+			<div class='col-sm-4'>
+				<a href='#henry-kim'>
+					<div class='portfolio-container' style='background: url(" . get_template_directory_uri() . '/images/portraits/henry-kim.jpg'. "'>
+						<div class='portfolio-title'>Henry Kim</div>
+					</div>
+				</a>
+			</div>
+			<div class='col-sm-4'>
+				<a href='#sarah-bennett'>
+					<div class='portfolio-container' style='background: url(" . get_template_directory_uri() . '/images/portraits/sarah-bennett.jpg'. "'>
+						<div class='portfolio-title'>Sarah Bennett</div>
+					</div>
+				</a>
+			</div>
+			<div class='col-sm-4'>
+				<a href='#charles-bennett'>
+					<div class='portfolio-container' style='background: url(" . get_template_directory_uri() . '/images/portraits/charles-bennett.jpg'. "'>
+						<div class='portfolio-title'>Charles Bennett</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class='row'>
+			<div class='col-sm-4'>
+				<a href='#stu-still'>
+					<div class='portfolio-container' style='background: url(" . get_template_directory_uri() . '/images/portraits/stu-still.jpg'. "'>
+						<div class='portfolio-title'>Stu Still</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	";
+}
+
 if ( ! function_exists( 'one_eighty_church_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time and author.
